@@ -407,7 +407,13 @@ export function generateBuiltinSingboxConfig(nodeList, options = {}) {
             final: levelKey === 'RELAY' ? DEFAULT_RELAY_GROUP : DEFAULT_SELECT_GROUP,
             rule_set: ruleSets,
             rules: routeRules,
+            default_http_client: 'rules-client',
         },
+        http_clients: [
+            {
+                tag: 'rules-client'
+            }
+        ],
     };
 
     return JSON.stringify(config, null, 2) + '\n';
