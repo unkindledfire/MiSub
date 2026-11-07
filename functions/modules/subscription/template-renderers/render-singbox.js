@@ -351,7 +351,7 @@ function buildRuleSets(rules) {
             format: detectRuleSetFormat(rule.value),
             url: pinRemoteRuleUrl(rule.value),
             update_interval: '24h',
-            download_detour: DNS_PROXY_GROUP,
+            //download_detour: DNS_PROXY_GROUP,
         }));
 
     const implicitRuleSets = [];
@@ -377,7 +377,7 @@ function buildRuleSets(rules) {
                                   `https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-${value}.srs`
                               ),
                     update_interval: '24h',
-                    download_detour: DNS_PROXY_GROUP,
+                    //download_detour: DNS_PROXY_GROUP,
                 });
             }
         }
