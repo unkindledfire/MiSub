@@ -202,4 +202,4 @@ MiSub is developed from [CF-Workers-SUB](https://github.com/cmliu/CF-Workers-SUB
 
 ## License
 
-MIT License. See [LICENSE](LICENSE).
+MIT License. See [LICENSE](LICENSE). 
